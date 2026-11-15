@@ -10,7 +10,7 @@ Static site for MusicSilence.com — multi-use sanctuary for music, silence, yog
 5. Deploy. Add custom domain once registered.
 
 ## Images
-Concept renders live in `images/` as WebP and are referenced from `index.html`. The redesign brief is `docs/brief.md`.
+Concept renders live in `images/` as WebP and are referenced from `index.html`.
 
 ## Donate
 The donate band (`#donate`) and its navigation link stay in the page with the `hidden` attribute until a live payment link replaces the `DONATE_URL` comment. The button points at `#` until then.

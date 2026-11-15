@@ -1,0 +1,3 @@
+# Pages does not support a 404 status in _redirects. Send the repo
+# README to the homepage so the markdown is not served as a public file.
+/README.md / 302
