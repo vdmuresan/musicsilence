@@ -5,77 +5,238 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Temple of Music and Silence | TOMAS</title>
   <meta name="description" content="The Temple of Music and Silence — a multi-use sanctuary where music and silence heal. Concert, yoga, meditation, art, and presence on 50+ acres of Florida nature.">
+  <meta name="theme-color" content="#F7F3EA">
+  <meta name="color-scheme" content="light">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400&family=Source+Sans+3:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="images/hero-temple-aerial.webp" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">TOMAS</div>
+  <a class="skip" href="#story">Skip to the story</a>
+
+  <header class="site-header">
+    <nav aria-label="Primary">
+      <a class="wordmark" href="#top">TOMAS</a>
       <ul>
         <li><a href="#story">The Story</a></li>
         <li><a href="#spaces">The Spaces</a></li>
         <li><a href="#healing">Healing</a></li>
         <li><a href="#founders">Join</a></li>
+        <li data-donate hidden><a href="#donate">Donate</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Temple of Music and Silence</h1>
-    <p class="lead">A place where music and silence can heal the world, starting here.</p>
-    <p class="domain">MusicSilence.com</p>
-  </section>
+  <main id="top">
+    <section class="hero" aria-label="Introduction">
+      <img
+        src="images/hero-temple-aerial.webp"
+        alt="White circular temple seen from above, among Florida palms, with a planted roof and a reflecting moat in pale morning light."
+        width="2400"
+        height="1350"
+        fetchpriority="high"
+      >
+      <div class="hero-plane">
+        <p class="eyebrow">MusicSilence.com</p>
+        <h1>Temple of Music and Silence</h1>
+        <span class="rule" aria-hidden="true"></span>
+        <p class="lead">A place where music and silence can heal the world, starting here.</p>
+      </div>
+    </section>
 
-  <section id="story">
-    <h2>The Original Idea</h2>
-    <p>Imagine a perfect glass sphere. A hall that holds nearly a thousand people across nine levels, with a fixed stage and a 360-degree rotating audience platform — slow, optional, like a kinetic mandala when the moment calls for it. The ceiling opens. It becomes a planetarium. It becomes a silent focus space for yoga, meditation, drawing, painting.</p>
-    <p>Reclining seats with deep lumbar support. A 24/7 lobby wrapped in endless shelves of books, free tea, coffee, water, and thoughtful snacks. The whole complex sits on 50+ acres of Florida Gulf Coast land: live oaks, meadows, a small lake, Japanese gardens, reflecting pools, forest bathing paths, and a golden dome with a roof garden.</p>
-    <p>This is the Temple of Music and Silence. A multi-purpose theater of music and the arts that also holds stillness. Built with the humility of nature. Cathedral-scale, yet intimate.</p>
-  </section>
+    <section id="story" class="story">
+      <div class="story-copy">
+        <p class="eyebrow">The Story</p>
+        <h2>The Original Idea</h2>
+        <span class="rule" aria-hidden="true"></span>
+        <p>A glass sphere. A hall for nearly a thousand people, across nine levels: a fixed stage, and a slow, optional 360-degree audience platform — a kinetic mandala when the moment calls for it. The ceiling opens. It becomes a planetarium, or a silent room for yoga, meditation, drawing, and painting.</p>
+        <p>Reclining seats with deep lumbar support. A lobby open 24/7, wrapped in shelves of books, with free tea, coffee, water, and thoughtful snacks. The complex sits on 50+ acres of Florida Gulf Coast land: live oaks, meadows, a small lake, Japanese gardens, reflecting pools, forest bathing paths, and a golden dome with a roof garden.</p>
+        <p class="closer">This is the Temple of Music and Silence. A multi-purpose theater of music and the arts that also holds stillness. Built with the humility of nature. Cathedral-scale, yet intimate.</p>
+      </div>
+      <figure class="story-figure">
+        <img
+          src="images/story-golden-dome.webp"
+          alt="Golden circular roof and rooftop garden among live oaks and Spanish moss, in bright morning light."
+          width="2400"
+          height="1350"
+          loading="lazy"
+          decoding="async"
+        >
+      </figure>
+    </section>
 
-  <section id="spaces">
-    <h2>What the Temple Holds</h2>
-    <div class="grid">
-      <article>
-        <h3>The Sphere Hall</h3>
-        <p>Glass sphere that opens to the sky. Concerts, planetarium nights, and silent focus sessions. Music and meditation share the same sacred volume.</p>
+    <section id="spaces" class="spaces">
+      <header class="spaces-intro">
+        <p class="eyebrow">The Spaces</p>
+        <h2>What the Temple Holds</h2>
+        <span class="rule" aria-hidden="true"></span>
+      </header>
+
+      <article class="space">
+        <figure>
+          <img
+            src="images/sphere-hall.webp"
+            alt="Empty cream stone hall under a glass dome, with concentric steps and arches open to a pale sky."
+            width="1600"
+            height="900"
+            loading="lazy"
+            decoding="async"
+          >
+        </figure>
+        <div class="space-copy">
+          <p class="index">01</p>
+          <h3>The Sphere Hall</h3>
+          <p>A glass sphere that opens to the sky. Concerts, planetarium nights, and silent focus. Music and meditation share the same sacred volume.</p>
+        </div>
       </article>
-      <article>
-        <h3>Kinetic Stage</h3>
-        <p>Optional rotating rings for special performances — a once-in-a-lifetime kinetic mandala. Musicians remain stable; the experience moves around them.</p>
+
+      <article class="space space-flip paper">
+        <figure>
+          <img
+            src="images/kinetic-rings.webp"
+            alt="Concentric rings of pale wood and concrete in a round pool, under an oculus and a thin ring of gold light."
+            width="1600"
+            height="900"
+            loading="lazy"
+            decoding="async"
+          >
+        </figure>
+        <div class="space-copy">
+          <p class="index">02</p>
+          <h3>Kinetic Stage</h3>
+          <p>Optional rotating rings for special performances — a once-in-a-lifetime kinetic mandala. Musicians remain stable; the experience moves around them.</p>
+        </div>
       </article>
-      <article>
-        <h3>Silent Focus Spaces</h3>
-        <p>Yoga, meditation, drawing, painting. The same architecture that holds a string orchestra can hold complete stillness.</p>
+
+      <article class="space space-tall">
+        <figure>
+          <img
+            src="images/silent-focus.webp"
+            alt="Pale concrete room with one vertical slit of daylight, a still rectangular pool, and a low bench."
+            width="1600"
+            height="1200"
+            loading="lazy"
+            decoding="async"
+          >
+        </figure>
+        <div class="space-copy">
+          <p class="index">03</p>
+          <h3>Silent Focus Spaces</h3>
+          <p>Yoga, meditation, drawing, painting. The same architecture that holds a string orchestra can hold complete stillness.</p>
+        </div>
       </article>
-      <article>
-        <h3>The Living Lobby</h3>
-        <p>24/7 shelves of books on every level. Free tea, coffee, water, and snacks. A place to arrive, stay, and return.</p>
+
+      <article class="space space-flip paper">
+        <figure>
+          <img
+            src="images/living-lobby.webp"
+            alt="Tall concrete lobby with shelves of white books, a low table set for tea, and a garden beyond a wall of glass."
+            width="1600"
+            height="900"
+            loading="lazy"
+            decoding="async"
+          >
+        </figure>
+        <div class="space-copy">
+          <p class="index">04</p>
+          <h3>The Living Lobby</h3>
+          <p>Shelves of books on every level, open 24/7. Free tea, coffee, water, and snacks. A place to arrive, stay, and return.</p>
+        </div>
       </article>
-      <article>
-        <h3>Nature Sanctuary</h3>
-        <p>50+ acres of live oaks, meadows, water, Japanese gardens, and forest bathing paths. The land is part of the temple.</p>
+
+      <article class="space">
+        <figure>
+          <img
+            src="images/nature-sanctuary.webp"
+            alt="Live oaks and Spanish moss above raked gravel, moss islands, a rectangular reflecting pool, and stone pavers."
+            width="1600"
+            height="900"
+            loading="lazy"
+            decoding="async"
+          >
+        </figure>
+        <div class="space-copy">
+          <p class="index">05</p>
+          <h3>Nature Sanctuary</h3>
+          <p>50+ acres of live oaks, meadows, water, Japanese gardens, and forest bathing paths. The land is part of the temple.</p>
+        </div>
       </article>
-      <article>
-        <h3>Roof & Water</h3>
-        <p>Golden dome with rooftop garden. Reflecting pools and aquarium spaces that bring living water into the architecture.</p>
+
+      <article class="space space-feature">
+        <figure>
+          <img
+            src="images/roof-garden.webp"
+            alt="Looking across a lemon-gold roof into a rooftop garden of winding paths, lawn, and a forest horizon."
+            width="1600"
+            height="1200"
+            loading="lazy"
+            decoding="async"
+          >
+        </figure>
+        <div class="space-copy">
+          <p class="index">06</p>
+          <h3>Roof &amp; Water</h3>
+          <p>A golden dome with a rooftop garden. Reflecting pools and aquarium spaces bring living water into the architecture.</p>
+        </div>
       </article>
+    </section>
+
+    <section id="healing" class="healing">
+      <figure>
+        <img
+          src="images/violin-light.webp"
+          alt="A single violin at rest on a concrete plinth, crossed by a slit of warm daylight."
+          width="1600"
+          height="1200"
+          loading="lazy"
+          decoding="async"
+        >
+      </figure>
+      <div class="healing-copy">
+        <p class="eyebrow">Healing</p>
+        <h2>The Magic of Healing</h2>
+        <span class="rule" aria-hidden="true"></span>
+        <p>Music, meditation, and yoga are not separate practices here. They are three expressions of the same presence.</p>
+        <p>Coming soon: articles and courses on the Magic of Healing with Music, Meditation, and Yoga — practical, embodied, and rooted in the temple vision.</p>
+      </div>
+    </section>
+
+    <section id="founders" class="founders">
+      <div class="founders-copy">
+        <p class="eyebrow">Join</p>
+        <h2>Founders Circle</h2>
+        <span class="rule" aria-hidden="true"></span>
+        <p>40–70 vision-keepers. Naming opportunities for halls, paths, gardens, and rooms. Multi-year commitments that build both the physical temple and its endowment.</p>
+        <p>We’re not just funding a building. We’re founding a place where music and silence can heal the world, starting here.</p>
+        <a class="invite" href="mailto:vdmuresan@gmail.com">Will you help build this sanctuary?</a>
+      </div>
+      <figure>
+        <img
+          src="images/deck-florida-colonnade.webp"
+          alt="Daytime approach to a circular colonnaded hall in a formal garden of palms, with a planted roof and a metal dome."
+          width="1600"
+          height="1372"
+          loading="lazy"
+          decoding="async"
+        >
+      </figure>
+    </section>
+
+    <div data-donate hidden>
+      <section id="donate" class="donate" aria-labelledby="donate-heading">
+        <p class="eyebrow">Donate</p>
+        <h2 id="donate-heading">Help build the temple.</h2>
+        <span class="rule" aria-hidden="true"></span>
+        <p>A gift toward a place where music and silence can heal.</p>
+        <!-- DONATE_URL -->
+        <a class="btn" href="#">Donate</a>
+      </section>
     </div>
-  </section>
+  </main>
 
-  <section id="healing">
-    <h2>The Magic of Healing</h2>
-    <p>Music, meditation, and yoga are not separate practices here. They are three expressions of the same presence. Coming soon: articles and courses on the Magic of Healing with Music, Meditation, and Yoga — practical, embodied, and rooted in the temple vision.</p>
-  </section>
-
-  <section id="founders">
-    <h2>Founders Circle</h2>
-    <p>40–70 vision-keepers. Naming opportunities for halls, paths, gardens, and rooms. Multi-year commitments that build both the physical temple and its endowment.</p>
-    <p>We’re not just funding a building. We’re founding a place where music and silence can heal the world, starting here.</p>
-    <a href="mailto:vdmuresan@gmail.com" class="cta">Will you help build this sanctuary?</a>
-  </section>
-
-  <footer>
+  <footer class="site-footer">
     <p>Temple of Music and Silence · MusicSilence.com</p>
   </footer>
 </body>
